@@ -1,0 +1,44 @@
+runtime: php55
+threadsafe: yes
+api_version: 1
+
+service: api
+
+inbound_services:
+- mail
+- mail_bounce
+
+handlers:
+- url: /requirements.php
+  script: web/requirements.php
+
+- url: /google299becc446328b0a.html
+  script: web/google299becc446328b0a.html
+
+- url: /.*
+  script: web/index.php
+
+- url: /images
+  static_dir: web/images
+
+skip_files:
+- .env
+
+env_variables:
+  # Framework
+  YII_DEBUG: false
+  YII_ENV: prod
+
+  # Database
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/<instance-connection-name>;dbname=<dbname>
+  MYSQL_USERNAME: <username>
+  MYSQL_PASSWORD: <password>
+
+  # Payment
+  omiseSecretKey: <secret-key>
+  omisePublicKey: <public-key>
+
+  # Email
+  EMAIL_NAME: <email>
+  EMAIL_PASS: <password>
+  EMAIL_SEND: true

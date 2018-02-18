@@ -1,0 +1,8 @@
+config/main-local.php
+vendor
+composer.lock
+.idea
+.env
+app.yaml
+uat.yaml
+cron.yaml

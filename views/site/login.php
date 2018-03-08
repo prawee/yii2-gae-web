@@ -3,7 +3,7 @@
  * @Author: Prawee Wongsa <prawee.w@integra8t.com>
  * @Date: 14/2/2018 AD 15:33
  */
-use Yii;
+$this->title = 'Login';
 ?>
 <div style="margin-top: 100px;"></div>
 <div class="col-xs-6 col-xs-offset-3">

@@ -6,13 +6,10 @@
 namespace i8\controllers;
 
 use Yii;
-use yii\db\Query;
-use i8\models\User;
 use yii\web\Controller;
 use i8\models\LoginForm;
 use i8\models\Reservation;
 use i8\models\Organization;
-use yii\helpers\ArrayHelper;
 
 class SiteController extends Controller
 {

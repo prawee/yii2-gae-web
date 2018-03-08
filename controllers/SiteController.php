@@ -8,8 +8,6 @@ namespace i8\controllers;
 use Yii;
 use yii\web\Controller;
 use i8\models\LoginForm;
-use i8\models\Reservation;
-use i8\models\Organization;
 
 class SiteController extends Controller
 {
